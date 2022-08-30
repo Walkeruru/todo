@@ -23,7 +23,7 @@ displayListas();
 document.getElementById("addProject").addEventListener("click",function(){
     modal.close();
     let input = document.getElementById("newPro");
-    if(input.value !="" && localStorage[Proyectos]){
+    if(input.value !="" && localStorage["Proyectos"]){
         proyectos = localStorage.getItem("Proyectos").split(",")
         currentProject = new proyecto(input.value);
         proyectos.push(input.value)
