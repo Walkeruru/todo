@@ -125,12 +125,13 @@ listas.forEach(function(lista){
 })}
 
 function displayListas(){
-   let proyectosLista = document.getElementById("list")
+    if(localStorage[proyectos])
+   {let proyectosLista = document.getElementById("list")
    let list = localStorage.getItem("Proyectos").split(",");
    for (let i=0; i<list.length; i++){
     proyectosLista.innerHTML +=`<li>${list[i]}</li>`
    }
-   selectListas()
+   selectListas()}
 }
 
 //modal para agregar proyecto
