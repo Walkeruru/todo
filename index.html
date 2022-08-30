@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <div class="projects">
+        <ul id="list">
+            <li>Home</li>
+        </ul>
+        <button class="open-button">Agregar Proyecto</button>
+        <dialog  class="modal" id="modal">
+        <input type="text" name="proyecto" id="newPro" placeholder="Nuevo Proyecto">
+        <button id="addProject">Agregar Proyecto</button>
+    </dialog>
+    <div class="footer">
+        <a href="https://github.com/Walkeruru">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github" width="25px">
+            Walkeruru</a>
+        </div>
+    </div>
+    <div class="add">
+        <input type="text" name="titulo" id="titulo" value="" placeholder="Titulo">
+        <input type="text" name="description" id="descripcion" value="" placeholder="Descripcion">
+        <input type="date" name="fecha" id="date" value="">
+        <select name="prioridad" id="prioridad">
+            <option value="importante">Importante</option>
+            <option value="No importante">No importante</option>
+        </select>
+        <button id="boton">Agregar</button>
+    </div>
+
+    <div class="container">
+    </div>
+</body>
+</html>
